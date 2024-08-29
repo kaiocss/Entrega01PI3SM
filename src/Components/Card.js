@@ -10,9 +10,16 @@ font-size: 28px
 const ProductContainer = styled.div`
     display: flex;
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se não couberem */
-    gap: 35px; /* Espaço entre os itens */
+    gap: 45px; /* Espaço entre os itens */
+    overflow: hidden;
+ 
 `;
 
+
+function truncateText(text, maxLength){
+    return text.length? text.slice(0, maxLength) + '...': text; 
+
+}
 
 function Card() {
 
@@ -22,7 +29,7 @@ function Card() {
             <StyledCards> Desinfetante Urca <br />
                 <Image src="p1.png" alt="Imagem" />
                 <br />
-                <a>Descrição do item 1</a>
+                <a>{truncateText("Desinfetante eficaz que elimina 99,9% dos germes e bactérias, deixando um aroma agradável e duradouro em seu ambiente.", 30)}</a>
             </StyledCards>
           
 

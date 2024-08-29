@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 // Componente estilizado para a imagem
 const StyledImage = styled.img`
-    width: 150px;
+display: flex; 
+width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
@@ -13,5 +14,4 @@ const StyledImage = styled.img`
 function Image({ src, alt }) {
     return <StyledImage src={src} alt={alt} />;
 }
-
 export default Image;
