@@ -7,13 +7,11 @@ const StyledImage = styled.img`
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
+    border-color: black;
 `;
 
 function Image({ src, alt }) {
-    return  (               
-        <img src="p1.png" alt="Imagem" />
-    );
-
+    return <StyledImage src={src} alt={alt} />;
 }
 
 export default Image;

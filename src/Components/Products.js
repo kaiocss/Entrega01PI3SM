@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 import styled from   'styled-components';
 
 function Products() {
@@ -6,7 +6,9 @@ function Products() {
     return (
 
         <>
+<ul>
 
+</ul>
         </>
 
     );
